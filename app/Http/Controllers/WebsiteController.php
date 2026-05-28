@@ -50,26 +50,26 @@ class WebsiteController extends Controller
             [
                 'img'   => 'assets/img/product1.svg',
                 'tag'   => 'Moda urbana',
-                'nome'  => 'Camisa',
-                'preco' => 150.00, 
+                'nome'  => 'Tenis',
+                'preco' => 289.90, 
             ],
             [
                 'img'   => 'assets/img/product2.svg',
                 'tag'   => 'Acessórios',
                 'nome'  => 'Mochila',
-                'preco' => 289.90,
+                'preco' => 229.90,
             ],
             [
                 'img'   => 'assets/img/product3.svg',
                 'tag'   => 'Lifestyle',
                 'nome'  => 'Relógio',
-                'preco' => 450.00,
+                'preco' => 399.90,
             ],
             [
                 'img'   => 'assets/img/product4.svg',
                 'tag'   => 'Tech',
                 'nome'  => 'Headphone',
-                'preco' => 320.50,
+                'preco' => 519.90,
             ]
         ];
         
