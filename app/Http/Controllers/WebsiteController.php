@@ -6,7 +6,6 @@ class WebsiteController extends Controller
 {
     public function home() 
     {
-        // Dados dinâmicos para os cards de destaque da Home
         $produtos = [
             [
                 'img'   => 'assets/img/product1.svg',
@@ -47,7 +46,6 @@ class WebsiteController extends Controller
 
     public function catalogo() 
     {
-        // Dados dinâmicos para a listagem completa do Catálogo
         $produtos = [
             [
                 'img'   => 'assets/img/product1.svg',
@@ -80,7 +78,6 @@ class WebsiteController extends Controller
 
     public function produto()
     {
-        // Simulando que o cliente clicou no primeiro tênis
         $produtoSelecionado = [
             'img'   => 'assets/img/product1.svg',
             'nome'  => 'Tenis Urban',
@@ -92,7 +89,6 @@ class WebsiteController extends Controller
 
     public function carrinho()
     {
-        // Simulando itens que o cliente já adicionou ao carrinho
         $itensCarrinho = [
             [
                 'img'      => 'assets/img/product1.svg',
