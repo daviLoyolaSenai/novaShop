@@ -33,3 +33,7 @@ Route::prefix('/admin')->group(function () {
         return view('admin.pedidos');
     });
 });
+
+use App\Http\Controllers\Admin\AdminProdutosController;
+
+Route::get('/admin/produtos', [AdminProdutosController::class, 'index']);

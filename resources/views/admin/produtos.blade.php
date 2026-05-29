@@ -13,12 +13,16 @@
         <div class="card">
           <h3>Catalogo</h3>
           <table class="table">
-            <thead><tr><th>Produto</th><th>Categoria</th><th>Preco</th><th>Estoque</th></tr></thead>
+            <thead><tr><th>Produtos</th><th>Categoria</th><th>Preco</th><th>Estoque</th></tr></thead>
             <tbody>
-              <tr><td>Tenis Urban</td><td>Moda</td><td>R$ 289,90</td><td>84</td></tr>
-              <tr><td>Mochila Pro</td><td>Acessorios</td><td>R$ 229,90</td><td>58</td></tr>
-              <tr><td>Relogio Edge</td><td>Lifestyle</td><td>R$ 399,90</td><td>19</td></tr>
-              <tr><td>Headphone Air</td><td>Tech</td><td>R$ 519,90</td><td>7</td></tr>
+              @foreach($produtos as $p)
+              <tr>
+                  <td>{{$p->nome}}</td>
+                  <td></td>
+                  <td>R$ {{$p->preco}}</td>
+                  <td>{{$p->estoque}}</td>
+              </tr>
+              @endforeach
             </tbody>
           </table>
         </div>
